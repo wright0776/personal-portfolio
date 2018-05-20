@@ -8,7 +8,7 @@ function Resume() {
                 <h5>801-755-0125</h5>
                 <h5>matwright2010@gmail.com</h5>
                 <h5>4769 S Holladay Blvd, Holladay, UT 84117</h5>
-                <h5>matthewwright.me</h5>
+                <h5>matthewwright.io</h5>
             </div>
             <div className='resumeContent'>
                 <div className='skills'>
