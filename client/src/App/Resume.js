@@ -67,11 +67,11 @@ function Resume() {
                     <ul className='resPortContainer'>
                         <li className='website'>
                             <div className='mLogo'>M</div>
-                            <a href="">matthewwright.me</a>
+                            <a href="https://matthewwright.io">matthewwright.io</a>
                         </li>
                         <li className='resPort'>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt=""/>
-                            <a href="">github.com/wright0776</a>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="github"/>
+                            <a href="https://github.com/wright0776">github.com/wright0776</a>
                         </li>
                     </ul>
                 </div>
