@@ -8,9 +8,11 @@
     margin: 0;
     padding: 0;
 }
+
 .imp {
     font-weight: 400;
 }
+
 button {
     cursor: pointer;
 }
@@ -20,6 +22,7 @@ button {
 .topNav {
     height: 50px;
 }
+
 .navButtons {
     height: 100%;
     width: 100%;
@@ -27,20 +30,59 @@ button {
     align-items: center;
     justify-content: space-evenly;
 }
+
+.underline {
+    height: 1px;
+    width: 0;
+    background: #000;
+    transition: .2s;
+}
+
 .navButton {
-    color: #000;
     text-decoration: none;
     cursor: pointer;
     transition: .5s;
+    font-size: 1.1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #000;
 }
-.navButton:hover {
-    text-shadow: 5px 5px 5px #888;
-    cursor: pointer;
-    transition: .5s;
+@media (max-width: 599px) {
+    .navButton {
+        height: 100%;
+    }
 }
-.navButton:active {
-    cursor: pointer;
-    color: blue;
+
+.navButton:hover .underline {
+    width: 100%;
+    transition: .2s;
+}
+
+@media (min-width: 600px) {
+    .navButton {
+        font-size: 1.2em;
+    }
+    .navButtons {
+        border-bottom: 1px solid gray;
+        box-shadow: inset 0 0 10px 10px white;
+    }
+    .navButton:hover {
+        /* text-shadow: 5px 5px 5px #888; */
+        cursor: pointer;
+        transition: .5s;
+    }
+    .navButton:active {
+        cursor: pointer;
+        color: blue;
+    }
+}
+
+@media (min-width: 1000px) {
+    .navButton {
+        font-size: 1.4em;
+    }
 }
 
 /* HOME PAGE */
@@ -55,25 +97,39 @@ button {
     padding: 0 0 20px 0;
     text-align: center;
 }
+
 .title {
-    margin: 5vh 0 10vh 0;    
+    margin: 20px 0 0 0;
+    font-size: 5em;
 }
-.main p, .main a {
+
+.main p,
+.main a {
     margin: 20px 0 5vh 0;
 }
-.main > a {
+
+@media (min-width: 600px) {
+    .main p {
+        font-size: 1.2em;
+    }
+}
+
+.main>a {
     display: flex;
     align-items: center;
     text-decoration: none;
     font-weight: 400;
 }
+
 .main img {
     height: 30px;
     margin-right: 10px;
 }
+
 .rainbow {
     animation: pulse 30s infinite;
 }
+
 .black {
     color: black;
 }
@@ -125,38 +181,148 @@ button {
 /* PORTFOLIO PAGE */
 
 .portfolio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
     height: 90vh;
 }
+
 .portfolio img {
     height: 30px;
+    margin-top: 10px;
 }
+
 .imgWithLabel {
     margin: 0 10px 0 0;
 }
-.portfolio a {
-    display: flex;
-    align-items: center;
+
+.item {
+    position: relative;    
+    display: block;
+    width: 50%;
+    text-align: center;
     text-decoration: none;
     color: #000;
+    padding: 10px;
+    margin: 0px auto 20px auto;
 }
+
+.item:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 1px solid transparent;
+}
+
+.item:hover:before {
+    animation: box .5s linear forwards;
+}
+
+@keyframes box {
+    0% {
+        width: 0;
+        height: 0;
+        border-top-color: #000;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    50% {
+        width: 100%;
+        height: 0;
+        border-top-color: #000;
+        border-right-color: #000;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        border-top-color: #000;
+        border-right-color: #000;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+}
+.item:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 1px solid transparent;
+}
+
+.item:hover:after {
+    animation: box2 .5s linear forwards;
+    /* animation-delay: 1s; */
+}
+
+@keyframes box2 {
+    0% {
+        width: 0;
+        height: 0;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: #000;
+    }
+    50% {
+        width: 0;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: #000;
+        border-left-color: #000;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: #000;
+        border-left-color: #000;
+    }
+}
+
+.title2 {
+    font-size: 3em;
+    margin: 20px;
+}
+
+@media (min-height: 600px) {
+    .portfolio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .title2 {
+        margin: 0 0 50px 0;
+    }
+}
+@media (min-width: 600px) {
+    .item {
+        width: 300px;
+    }
+}
+
 .slide {
     animation: slideInLeft 1s;
 }
-.portfolio a {
-    margin: 10px 0 40px 0;
-}
+
 @keyframes slideInLeft {
     from {
         transform: translateX(-80vw)
     }
     50% {
-        transform: 
-            translateX(10vw)
-            skewX(-30deg)
+        transform: translateX(10vw) skewX(-30deg)
     }
     to {
         transform: translateX(0)
@@ -174,23 +340,28 @@ button {
     background: #f1f1f1;
     box-shadow: 0 0 2px #888;
 }
+
 .resumeContact {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 0 10px 0;
 }
-.resumeContact > * {
+
+.resumeContact>* {
     margin: 1px 0 0 0;
 }
+
 .resumeContent {
     background: #fff;
     width: 99%;
     padding: 3%;
 }
-.resumeContent > * {
+
+.resumeContent>* {
     margin: 0 0 10px 0;
 }
+
 .resumeContent h2 {
     margin: 5px 0;
 }
@@ -216,9 +387,10 @@ button {
     display: grid;
     grid-template-columns: 33% 33% 33%;
 }
-.skillsContainer > * {
+
+.skillsContainer>* {
     margin: 0 0 1px 0;
-    font-weight: 300;    
+    font-weight: 300;
 }
 
 /* RESUME EDUCATION SECTION */
@@ -228,13 +400,16 @@ button {
     font-size: .9em;
     width: 95%;
 }
-.eduContainer > * {
+
+.eduContainer>* {
     margin: 0 0 10px 0;
 }
+
 .eduTitle {
     font-weight: 300;
     font-size: 1em;
 }
+
 .eduSub {
     padding: 0 0 0 20px;
     display: flex;
@@ -246,17 +421,21 @@ button {
     list-style: none;
     font-size: .9em
 }
-.expContainer > * {
+
+.expContainer>* {
     margin: 0 0 10px 0;
 }
+
 .expContainer h3,
 .expContainer h4 {
     font-weight: 300;
 }
+
 .expContainer h4 {
     font-size: .9em;
     margin: 5px 0 0 0;
 }
+
 .expContainer span,
 .expContainer p {
     display: flex;
@@ -269,30 +448,37 @@ button {
 .resPortContainer {
     list-style: none;
 }
-.resPortContainer > * {
+
+.resPortContainer>* {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .resPortContainer a {
     color: #000;
     text-decoration: none;
 }
+
 .website {
     margin: 10px 0 20px 0;
 }
+
 .resPort {
     margin: 10px 0 10px 0;
 }
+
 .mLogo,
 .resPortContainer img {
     margin: 0 10px 0 0;
 }
+
 .mLogo {
     margin-bottom: -5px;
     font-size: 20px;
     font-family: 'Syncopate', sans-serif;
 }
+
 .resPortContainer img {
     height: 20px;
 }
@@ -306,11 +492,13 @@ button {
     margin: 0 0 10px 0;
     width: 80%;
 }
-.refContainer > * {
+
+.refContainer>* {
     display: flex;
     flex-direction: column;
     margin: 0 0 10px 0;
 }
+
 .refContainer h4,
 .refPhone {
     font-weight: 300;
@@ -325,9 +513,11 @@ button {
     align-items: center;
     justify-content: center;
 }
+
 .contactTitle {
     margin: 10vh 0;
 }
+
 .contactPhone,
 .contactEmail {
     display: flex;
@@ -335,10 +525,12 @@ button {
     margin: 20px 0 0 0;
     font-size: 1.2em;
 }
-.contactPhone > span,
-.contactEmail > span {
+
+.contactPhone>span,
+.contactEmail>span {
     font-weight: 300;
 }
+
 .contactPhone img,
 .contactEmail img {
     height: 20px;
@@ -353,18 +545,22 @@ button {
     display: flex;
     flex-direction: column;
 }
+
 .messages {
     text-align: center;
 }
+
 .message {
     margin: 0 0 10px 0;
     color: #f00;
 }
+
 .contactInputLabel,
 .contactTALabel {
     margin: 0 0 2px 0;
     font-size: 1em;
 }
+
 .contactInput {
     width: 100%;
     margin: 0 0 10px 0;
@@ -373,6 +569,7 @@ button {
     padding: 1px;
     border: 1px solid #aaa;
 }
+
 .contactTA {
     width: 100%;
     min-height: 110px;
@@ -383,10 +580,12 @@ button {
     resize: none;
     border: 1px solid #aaa;
 }
+
 .contactButtonContainer {
     display: flex;
     justify-content: center;
 }
+
 .contactSubmit {
     width: 100px;
     height: 100%;
@@ -395,6 +594,7 @@ button {
     border-radius: 3px;
     margin-bottom: 50px;
 }
+
 .contactSubmit:active {
     box-shadow: 1px 1px 1px #888;
 }
@@ -410,6 +610,7 @@ button {
     height: 100%;
     background: rgba(0, 0, 0, 0.4);
 }
+
 .tyModal {
     position: relative;
     background: #fff;
@@ -422,6 +623,7 @@ button {
     align-items: center;
     justify-content: center;
 }
+
 .closeButton {
     position: absolute;
     top: 10px;
@@ -431,6 +633,7 @@ button {
     line-height: .5;
     outline: none;
 }
+
 .tyModal1 {
     margin: 0 0 5px 0;
     font-size: 1.2em;
@@ -443,9 +646,11 @@ button {
     flex-direction: column;
     align-items: center;
 }
+
 .adminViewContacts h1 {
     padding: 0 0 10px 0;
 }
+
 .adminContact {
     position: relative;
     width: 80%;
@@ -453,6 +658,7 @@ button {
     margin: 10px 0;
     border: 1px solid #ddd;
 }
+
 .removeButton {
     position: absolute;
     right: 10px;
@@ -463,22 +669,24 @@ button {
     border-radius: 50%;
     outline: none;
 }
+
 .contactAttb {
     padding: 0 0 2px 0;
 }
+
 .adminContact span {
     font-weight: 300;
 }
 
 /* media queries */
 
-@media (min-width: 374px){
+@media (min-width: 374px) {
     .main p {
         width: 50%;
     }
 }
 
-@media (min-width: 767px){
+@media (min-width: 767px) {
     .contactForm {
         margin: 0 10vw;
     }

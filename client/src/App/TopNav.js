@@ -1,14 +1,26 @@
 import React from "react";
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-function TopNav () {
+function TopNav() {
     return (
         <div className="topNav">
             <ul className="navButtons">
-                <Link className='navButton' to="/">Home</Link>
-                <Link className='navButton' to="/portfolio">Portfolio</Link>
-                <Link className='navButton' to="/resume">Resume</Link>
-                <Link className='navButton' to="/contact">Contact</Link>
+                <Link className='navButton' to="/">
+                    Home
+                    <div className='underline'></div>
+                </Link>
+                <Link className='navButton' to="/portfolio">
+                    Portfolio
+                    <div className='underline'></div>
+                </Link>
+                <Link className='navButton' to="/resume">
+                    Resume
+                    <div className='underline'></div>
+                </Link>
+                <Link className='navButton' to="/contact">
+                    Contact
+                    <div className='underline'></div>
+                </Link>
             </ul>
         </div>
     )
