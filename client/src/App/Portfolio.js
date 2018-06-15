@@ -6,6 +6,7 @@ function Portfolio() {
             <h1 className='title2 slide'>Portfolio</h1>
             <a className='item' href="https://workout-creator.herokuapp.com">
                 <p>Workout Builder App</p>
+                <p>(a work in progress)</p>
                 <img className='imgWithLabel' src="https://cdn1.iconfinder.com/data/icons/sports-5/96/Dumbbell-512.png" alt="workout builder app" />
             </a>
             <a className='item' href="http://xkcd-viewer.surge.sh">
