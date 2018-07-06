@@ -369,8 +369,7 @@ button {
 .skills,
 .education,
 .experience,
-.resPortfolio,
-.references {
+.resPortfolio {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -485,15 +484,22 @@ button {
 
 /* RESUME REFERENCES SECTION */
 
+.references {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
 .refContainer {
     list-style: none;
     display: flex;
-    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     margin: 0 0 10px 0;
     width: 80%;
 }
 
-.refContainer>* {
+.refContainer > * {
     display: flex;
     flex-direction: column;
     margin: 0 0 10px 0;
@@ -502,6 +508,11 @@ button {
 .refContainer h4,
 .refPhone {
     font-weight: 300;
+}
+.ref {
+    width: 150px;
+    padding-left: 20px;
+    margin-top: 15px;
 }
 
 /* CONTACT PAGE */

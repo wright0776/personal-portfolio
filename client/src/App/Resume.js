@@ -78,21 +78,21 @@ function Resume() {
                 <div className='references'>
                     <h2>REFERENCES</h2>
                     <ul className='refContainer'>
-                        <li>
+                        <li className='ref'>
                             <h4>Kayleen Evans</h4>
                             <span>Director of Surgical Services</span>
                             <span>Salt Lake Regional Medical Center</span>
                             <span>Salt Lake City, UT</span>
                             <span className='refPhone'>801-350-4111</span>
                         </li>
-                        <li>
+                        <li className='ref'>
                             <h4>Laney Kawaguchi</h4>
                             <span>Fellow Student/Friend</span>
                             <span>V-School</span>
                             <span>Salt Lake City, UT</span>
                             <span className='refPhone'>801-906-1610</span>
                         </li>
-                        <li>
+                        <li className='ref'>
                             <h4>Austin Walker</h4>
                             <span>Web Developer/Friend</span>
                             <span>Crossroads Technologies Inc.</span>
