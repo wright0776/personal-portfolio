@@ -8,7 +8,7 @@ import TopNav from "./TopNav";
 
 // ROUTES
 import Main from "./Main";
-import Portfolio from './Portfolio';
+import Portfolio from './Portfolio/';
 import Resume from './Resume';
 import Contact from './Contact';
 
