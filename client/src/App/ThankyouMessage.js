@@ -6,7 +6,7 @@ function ThankyouMessage(props) {
             <div id='tyModal' className='tyModal'>
                 <button id='closeButton' className='closeButton'>&times;</button>
                 <span className='tyModal1'>Thank you for contacting me.</span>
-                <span>I will get back to you in a jiffy!</span>
+                <span>I will be in touch shortly.</span>
             </div>
         </div>
     )
