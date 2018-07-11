@@ -4,6 +4,8 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const path = require("path");
 const morgan = require("morgan");
+const nodeMailer = require("nodemailer");
+require('dotenv').config();
 
 // ROUTERS
 const contactsRouter = require('./routes/contacts');

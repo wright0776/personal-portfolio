@@ -1,6 +1,8 @@
 const express = require("express");
 const contactsRouter = express.Router();
 const Contact = require("../models/contact");
+const nodeMailer = require('nodemailer');
+
 
 contactsRouter.get("/", (req, res) => {
     Contact.find((err, contacts) => {
@@ -11,6 +13,31 @@ contactsRouter.get("/", (req, res) => {
 
 contactsRouter.post("/", (req, res) => {
     const newContact = new Contact(req.body);
+    const transporter = nodeMailer.createTransport({
+        service: 'gmail',
+        auth: {
+            user: process.env.EMEM,
+            pass: process.env.EMPW
+        }
+    })
+    const mailOptions = {
+        from: `${req.body.email}`,
+        to: process.env.EMEM,
+        subject: `${req.body.name}`,
+        text:  `Someone contacted you! 
+                Name: ${req.body.name},
+                Phone: ${req.body.phone},
+                Email: ${req.body.email},
+                Message: ${req.body.message}`,
+        replyTo: `${req.body.email}`
+    }
+    transporter.sendMail(mailOptions, function(err, res) {
+        if (err) {
+            console.log('there was an error: ', err);
+        } else {
+            console.log('here is the res: ', res)
+        }
+    })
     newContact.save(err => {
         if (err) return res.status(500).send(err);
         return res.send(newContact);
