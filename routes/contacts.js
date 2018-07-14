@@ -16,13 +16,13 @@ contactsRouter.post("/", (req, res) => {
     const transporter = nodeMailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'matwright2010@gmail.com',
+            user: 'matthewwright0776@gmail.com',
             pass: process.env.EMPW
         }
     })
     const mailOptions = {
         from: `${req.body.email}`,
-        to: 'matwright2010@gmail.com',
+        to: 'matthewwright0776@gmail.com',
         subject: `${req.body.name}`,
         text:  `Someone contacted you through your website! 
                 Name: ${req.body.name},
