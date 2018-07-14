@@ -16,7 +16,7 @@ contactsRouter.post("/", (req, res) => {
     const transporter = nodeMailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'matwright2010@gmail.com',
+            user: 'matwright2010',
             pass: process.env.EMPW
         }
     })
