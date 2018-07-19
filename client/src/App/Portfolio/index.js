@@ -31,7 +31,7 @@ function Portfolio() {
                     <img src="https://image.flaticon.com/icons/svg/34/34227.svg" alt="linked in" />
                 </a>
             </div>
-            <h4 className='portfolio-sub'>* Please bear in mind some of my projects are farther along and others are more of a work in progress.</h4>
+            <h4 className='portfolio-sub'>* Work in progress.</h4>
         </div>
     )
 }
