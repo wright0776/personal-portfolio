@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import './top-nav.css';
 
 function TopNav() {
     return (
         <div className="topNav">
             <ul className="navButtons">
                 <Link className='navButton' to="/">
-                    Home
+                    Matt
                     <div className='underline'></div>
                 </Link>
                 <Link className='navButton' to="/portfolio">

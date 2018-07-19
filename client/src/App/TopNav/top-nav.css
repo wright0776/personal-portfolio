@@ -1,0 +1,63 @@
+/* TOP NAV BAR */
+
+.topNav {
+    height: 50px;
+    background-color: #323232;
+}
+
+.navButtons {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.underline {
+    height: 1px;
+    width: 0;
+    background: #fff;
+    transition: .2s;
+}
+
+.navButton {
+    text-decoration: none;
+    cursor: pointer;
+    transition: .5s;
+    font-size: 1.1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.navButton:hover {
+    transition: .5s;
+    color: lime;
+}
+.navButton:active {
+    cursor: pointer;
+    color: lime;
+}
+.navButton:hover .underline {
+    width: 100%;
+    transition: .2s;
+    color: #cacaca;
+}
+@media (max-width: 599px) {
+    .navButton {
+        height: 100%;
+    }
+}
+
+@media (min-width: 600px) {
+    .navButton {
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 1000px) {
+    .navButton {
+        font-size: 1.4em;
+    }
+}
