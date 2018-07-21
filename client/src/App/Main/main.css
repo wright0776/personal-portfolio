@@ -10,10 +10,12 @@
     padding: 0 0 20px 0;
     text-align: center;
     perspective: 1000px;
+    perspective-origin: top;
 }
 .title-container {
     padding: 20px;
-    margin: 20px;
+    margin-top: 40px;
+    width: 75%;
     box-shadow: 0 0 20px darkgreen, 5px -2px 50px 15px lime;
     transform: rotateY(270deg);
     animation: spinin 2s forwards;
@@ -28,10 +30,19 @@
     }
 }
 .title {
-    margin: 20px 0 10px 0;
-    font-size: 5em;
+    margin: 5px 0;
+    font-size: 3em;
 }
-
+@media (min-width: 600px) {
+    .title-container {
+        width: auto;
+        margin-top: 50px;
+        padding: 20px;
+    }
+    .title {
+    margin: 20px 0 10px 0;        
+    }
+}
 .main-links {
     display: flex;
     flex-direction: column;

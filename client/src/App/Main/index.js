@@ -12,7 +12,8 @@ class Main extends Component {
     }
 
     spinAgain = () => {
-        this.setState({spin: `${Math.floor(Math.random() * 720)}deg`,animation: 'none'});
+        this.setState({spin: `${Math.floor(Math.random() * 1080)}deg`,animation: 'none'});
+        console.log(this.state.spin)
     }
 
     render() {

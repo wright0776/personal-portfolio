@@ -5,6 +5,7 @@ import { Switch, Route } from "react-router-dom";
 
 // STATIC
 import TopNav from "./TopNav/";
+// import MobileNav from './MobileNav';
 
 // ROUTES
 import Main from "./Main/";
@@ -19,6 +20,7 @@ function App() {
     return (
         <div className='app'>
             <TopNav />
+            {/* <MobileNav /> */}
             <Switch>
                 <Route exact path='/' component={Main} />
                 <Route path='/portfolio' component={Portfolio} />

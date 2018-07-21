@@ -1,18 +1,16 @@
-/* TOP NAV BAR */
+/* MOBILE NAV BAR */
 
-.topNav {
+.mobile-nav {
     height: 50px;
     background-color: #323232;
 }
-
-.navButtons {
+.mNavButtons {
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
-
 .underline {
     height: 1px;
     width: 0;
@@ -20,7 +18,7 @@
     transition: .2s;
 }
 
-.navButton {
+.mNavButton {
     text-decoration: none;
     cursor: pointer;
     transition: .5s;
@@ -30,6 +28,7 @@
     align-items: center;
     justify-content: center;
     color: #fff;
+    padding: 0 20px;
 }
 .navButton:hover {
     transition: .5s;
@@ -43,24 +42,4 @@
     width: 100%;
     transition: .2s;
     color: #cacaca;
-}
-@media (max-width: 599px) {
-    .navButton {
-        height: 100%;
-    }
-    /* .topNav {
-        display: none;
-    } */
-}
-
-@media (min-width: 600px) {
-    .navButton {
-        font-size: 1.2em;
-    }
-}
-
-@media (min-width: 1000px) {
-    .navButton {
-        font-size: 1.4em;
-    }
 }

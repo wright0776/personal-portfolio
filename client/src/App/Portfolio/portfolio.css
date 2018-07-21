@@ -11,8 +11,8 @@
 
 .title2 {
     font-size: 3em;
+    padding: 10px;
 }
-
 .slide {
     animation: slideInLeft 1.2s;
 }
