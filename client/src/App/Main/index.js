@@ -7,7 +7,8 @@ class Main extends Component {
         super(props)
         this.state = {
             spin: 270,
-            animation: 'spinin 2s forwards'
+            animation: 'spinin 2s forwards',
+            front: true
         }
     }
 
@@ -15,13 +16,27 @@ class Main extends Component {
         this.setState({spin: `${Math.floor(Math.random() * 1080)}deg`,animation: 'none'});
         console.log(this.state.spin)
     }
+    flipOver = () => {
+        this.setState(prevState => ({front: !prevState.front}))
+    }
+    componentDidMount () {
+        setTimeout(() => {
+            this.setState({
+                spin: '-5deg',
+                animation: 'none'
+            })
+        }, 2000)
+    }
 
     render() {
         return (
             <div className="main">
-                <div className='title-container' onClick={this.spinAgain} style={{transform: `rotateY(${this.state.spin})`, animation: this.state.animation}} >
+                <div className='title-container' 
+                    onClick={this.spinAgain} 
+                    style={{transform: `rotateY(${this.state.spin})`, animation: this.state.animation}} 
+                    >
                     <h1 className='title'>Matt</h1>
-                    <p className='subtitle'>I'm a web developer, specialized in ReactJS.</p>
+                    <p className='subtitle'>Certified Full Stack Web Developer</p>
                 </div>
                 <div className='main-links'>
                     <Link className='black' to='/portfolio'>
