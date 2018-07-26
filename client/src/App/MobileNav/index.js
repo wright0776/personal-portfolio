@@ -41,7 +41,7 @@ class MobileNav extends Component {
                         </span>
                     </button>
                 </ul>
-                <ul onMouseUp={this.openHam} className={this.state.mNavMenuClass}>
+                <ul className={this.state.mNavMenuClass}>
                     <Link className='mNavMenuLink' onClick={this.openHam} to='/portfolio'>Portfolio</Link>
                     <Link className='mNavMenuLink' onClick={this.openHam} to='/resume'>Resume</Link>
                     <Link className='mNavMenuLink' onClick={this.openHam} to='/contact'>Contact</Link>
