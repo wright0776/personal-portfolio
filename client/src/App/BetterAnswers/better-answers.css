@@ -1,0 +1,62 @@
+
+.betterAnswers * {
+    font-family: Helvetica, sans-serif;
+}
+.betterAnswers {
+    padding: 4%;
+}
+.betterAnswers hr{
+    --line-color: rgb(67, 121, 192);
+    border: 1px solid var(--line-color);
+}
+.betterAnswers a {
+    color: black;
+}
+.betterAnswers>h1 {
+    padding-bottom: 10px;
+}
+
+.betterAnswers h2 {
+    padding-bottom: 10px;
+}
+
+.betterAnswers h3 {
+    padding-bottom: 10px;
+}
+
+.betterAnswers p {
+    padding: 0 0 20px 40px;
+    line-height: 1.5;
+}
+
+.betterAnswers b {
+    font-weight: 400;
+}
+
+.outerList {
+    padding: 10px;
+}
+
+.innerList {
+    padding: 0 20px;
+}
+
+.conclusion {
+    padding: 20px 0;
+}
+.signOff {
+    width: 100%;
+    font-size: 150%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+.myFace {
+    margin: auto;
+    background-image: url('../../media/my_face2.jpg');
+    background-size: cover; 
+    background-position: center;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}

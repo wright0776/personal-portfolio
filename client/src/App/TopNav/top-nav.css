@@ -48,9 +48,9 @@
     .navButton {
         height: 100%;
     }
-    /* .topNav {
+    .topNav {
         display: none;
-    } */
+    }
 }
 
 @media (min-width: 600px) {

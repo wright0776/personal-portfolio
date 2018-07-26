@@ -22,7 +22,8 @@
     text-decoration: none;
     cursor: pointer;
     transition: .5s;
-    font-size: 1.1em;
+    font-size: 1.5em;
+    letter-spacing: 1px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,4 +43,46 @@
     width: 100%;
     transition: .2s;
     color: #cacaca;
+}
+
+@media (min-width: 600px) {
+    .mobile-nav {
+        display: none;
+    }
+}
+
+.mNavMenu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    top: 100%;
+    transition: .5s;
+    height: 100vh;
+    background: #323232;
+}
+.mNavActive {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    top: 50px;
+    background: #323232;
+    transition: .5s;
+    height: 100%;
+}
+*:focus {
+    outline: none;
+}
+.mNavMenuLink {
+    text-decoration: none;
+    color: white;
+    background-color: #323232;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px
+}
+.mNavMenuLink:hover {
+    background: #232323;
 }

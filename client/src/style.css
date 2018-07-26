@@ -379,7 +379,6 @@ button {
 
 /* media queries */
 
-
 @media (min-width: 767px) {
     .contactForm {
         margin: 0 10vw;
