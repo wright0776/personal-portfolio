@@ -28,7 +28,7 @@ function App() {
                 <Route path='/resume' component={Resume} />
                 <Route path='/contact' component={Contact} />
                 <Route path='/adminViewContacts' component={AdminViewContacts} />
-                <Route path='/better-answers' component={BetterAnswers} />
+                <Route path='/dear-bret' component={BetterAnswers} />
             </Switch>
         </div>
     )
