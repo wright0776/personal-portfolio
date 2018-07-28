@@ -12,8 +12,6 @@
 .portfolio-items>* {
     font-weight: 300;
     animation: slideInBottom 1.2s forwards;
-    position: absolute;
-    transform: translateY(100vh);
     opacity: 0;
 }
 .a {

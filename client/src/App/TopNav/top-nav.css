@@ -13,13 +13,6 @@
     justify-content: space-evenly;
 }
 
-.underline {
-    height: 1px;
-    width: 0;
-    background: #fff;
-    transition: .2s;
-}
-
 .navButton {
     text-decoration: none;
     cursor: pointer;
@@ -31,19 +24,7 @@
     justify-content: center;
     color: #fff;
 }
-.navButton:hover {
-    transition: .5s;
-    color: lime;
-}
-.navButton:active {
-    cursor: pointer;
-    color: lime;
-}
-.navButton:hover .underline {
-    width: 100%;
-    transition: .2s;
-    color: #cacaca;
-}
+
 @media (max-width: 599px) {
     .navButton {
         height: 100%;
@@ -56,6 +37,25 @@
 @media (min-width: 600px) {
     .navButton {
         font-size: 1.2em;
+    }
+    .navButton:active {
+        cursor: pointer;
+        color: lime;
+    }
+    .navButton:hover {
+        transition: .5s;
+        color: lime;
+    }
+    .navButton:hover .underline {
+        width: 100%;
+        transition: .2s;
+        color: #cacaca;
+    }
+    .underline {
+        height: 1px;
+        width: 0;
+        background: #fff;
+        transition: .2s;
     }
 }
 
