@@ -58,7 +58,8 @@
     z-index: 2;
     top: 100%;
     transition: .5s;
-    height: 100vh;
+    height: 300vh;
+    overflow: hidden;
     background: #323232;
 }
 .mNavActive {
