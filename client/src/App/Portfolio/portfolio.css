@@ -2,10 +2,38 @@
 
 .portfolio {
     padding: 0 5%;
-    background: linear-gradient(200deg, #fff, rgba(0, 255, 0, 0.25), rgba(0, 174, 255, 0.75), rgb(162, 0, 255));
+    background: linear-gradient(200deg, rgba(0, 255, 0, 0.25), rgba(0, 174, 255, 0.75), rgb(162, 0, 255));
+    /* background-image: url('https://images.unsplash.com/photo-1532452197655-0bca72ee54da?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cf870d5303d8d3389a21f4076a682bd8&auto=format&fit=crop&w=2639&q=80');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
     min-height: 100vh;
 }
-
+.portfolio-items>* {
+    font-weight: 300;
+    animation: slideInBottom 1.2s forwards;
+    position: absolute;
+    transform: translateY(100vh);
+    opacity: 0;
+}
+.a {
+    animation-delay: .1s;
+}
+.b {
+    animation-delay: .2s;
+}
+.c {
+    animation-delay: .3s;
+}
+.d {
+    animation-delay: .4s;
+}
+.e {
+    animation-delay: .5s;
+}
+.f {
+    animation-delay: .6s;
+}
 .portfolioTitle {
     line-height: 2.5;
     text-align: center;
@@ -13,7 +41,7 @@
     color: rgb(162, 0, 255);
 }
 .slide {
-    animation: slideInLeft 1.2s;
+    /* animation: slideInLeft 1.2s; */
 }
 .portfolio-note {
     padding-bottom: 20px;
@@ -47,8 +75,9 @@
     padding: 10px;
     margin: 0px auto 20px auto;
     transition: .5s;
-    box-shadow:  0 20px 20px -15px white;
-    /* border-radius: 5%; */
+    box-shadow: inset -10px 20px 20px -15px whitesmoke, -10px 20px 30px -5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);    
 }
 
 .item:before {
@@ -62,13 +91,12 @@
     border: 1px solid transparent;
 }
 .item:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 0;
-    /* box-shadow: none; */
-    box-shadow:  0 20px 30px -5px white;
+    box-shadow: inset -10px 20px 20px -15px whitesmoke, -10px 20px 30px 5px rgba(0, 0, 0, 0.2);
+    transition: 0s;
 }
 .item:active {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: inset -10px 20px 20px -20px whitesmoke, -10px 20px 30px -10px rgba(0, 0, 0, 0.2);
 }
 /* .item:hover:before {
     animation: box .5s linear forwards;
@@ -121,13 +149,27 @@
 
 @keyframes slideInLeft {
     from {
-        transform: translateX(-80vw)
+        transform: translateX(-80vw);
     }
     50% {
-        transform: translateX(10vw) skewX(-30deg)
+        transform: translateX(10vw) skewX(-30deg);
     }
     to {
-        transform: translateX(0)
+        transform: translateX(0);
+    }
+}
+@keyframes slideInBottom {
+    from {
+        transform: translateY(80vh);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(-10vh);
+        opacity: .5;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
 
