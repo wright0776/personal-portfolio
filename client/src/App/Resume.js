@@ -25,6 +25,7 @@ function Resume() {
                         <li>Mongoose</li>
                         <li>Sass/Scss</li>
                         <li>Angular 4</li>
+                        <li>Java</li>
                     </ul>
                 </div>
                 <div className='education'>
