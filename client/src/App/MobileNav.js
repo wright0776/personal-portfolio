@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import './mobile-nav.css';
-import './hamburgers.css';
 
 class MobileNav extends Component {
     constructor(props) {

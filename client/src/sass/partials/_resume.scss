@@ -1,0 +1,203 @@
+// RESUME PAGE 
+
+.resume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1%;
+    padding: 5px;
+    background: #f1f1f1;
+    box-shadow: 0 0 2px #888;
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0 10px 0;
+    }
+    @media (min-width: 600px) {
+        .contact {
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-evenly;
+            margin: 10px 0 15px 0;
+        }
+    }
+
+    .resumeContact>* {
+        margin: 1px 0 0 0;
+    }
+
+    .resumeContent {
+        background: #fff;
+        width: 99%;
+        padding: 3%;
+    }
+
+    .resumeContent>* {
+        margin: 0 0 10px 0;
+    }
+
+    .resumeContent h2 {
+        margin: 5px 0;
+    }
+
+    .skills,
+    .education,
+    .experience,
+    .resPortfolio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    // RESUME SKILLS SECTION
+
+    .skillsContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: .9em;
+        width: 80%;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+
+    .skillsContainer>* {
+        margin: 0 0 1px 0;
+        font-weight: 300;
+    }
+
+    // RESUME EDUCATION SECTION
+
+    .eduContainer {
+        list-style: none;
+        font-size: .9em;
+        width: 95%;
+    }
+
+    .eduContainer>* {
+        margin: 0 0 10px 0;
+    }
+
+    .eduTitle {
+        font-weight: 300;
+        font-size: 1em;
+    }
+
+    .eduSub {
+        padding: 0 0 0 20px;
+        display: flex;
+    }
+
+    // RESUME EXPERIENCE SECTION
+
+    .expList {
+        list-style: none;
+        font-size: .9em;
+
+        li {
+            margin: 10px 0 20px 0;
+
+            h3 {
+                padding-bottom: 2px;
+            }
+            span {
+                font-style: italic;
+            }
+            p {
+                margin: 10px 0;
+            }
+        }
+        h3, h4 {
+            font-weight: 300;
+            font-size: 1em;
+            margin: 5px 0 0 0;
+        }
+    
+        span, p {
+            display: flex;
+            padding: 0 0 0 20px;
+            margin: 0 0 1px 0;
+        }
+    }
+
+
+    /* RESUME PORTFOLIO SECTION */
+
+    .portfolioList {
+        list-style: none;
+
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        @media (min-width: 600px) {
+            & {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+            
+        }
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+        img {
+            height: 20px;
+            margin: 0 10px 0 0;
+        }
+        .mLogo {
+            margin: 0 10px -5px 0;
+            font-size: 20px;
+            font-family: 'Syncopate', sans-serif;
+        }
+        .website {
+            margin: 10px 0;
+        }
+        .resPort {
+            margin: 10px 0;
+        }
+    }
+
+
+    /* RESUME REFERENCES SECTION */
+
+    .references {
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+    }
+
+    .referencesList {
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin: 0 0 10px 0;
+        width: 80%;
+
+        li {
+            display: flex;
+            flex-direction: column;
+            margin: 0 0 10px 0;
+            line-height: 1.2;
+        }
+        h4, .phone {
+            font-weight: 300;
+        }
+    }
+
+    .refPhone {
+        font-weight: 300;
+    }
+    .ref {
+        width: 150px;
+        padding-left: 20px;
+        margin-top: 15px;
+    }
+
+}

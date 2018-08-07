@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { postContact } from '../redux/contacts';
 import ThankyouMessage from './ThankyouMessage';
 
-class Contact extends Component {
+class ContactPage extends Component {
     constructor(props) {
         super(props);
         this.initialState = {
@@ -59,7 +59,7 @@ class Contact extends Component {
 
     render() {
         return (
-            <div className='contact'>
+            <div className='contactPage'>
                 <h1 className='contactTitle'>Contact Me</h1>
                 <div className='contactPhone'>
                     <img src="http://www.adornpixels.com/cdn/2/2000/499/black-telephone-icon_146226.png" alt="phone" />
@@ -83,4 +83,4 @@ class Contact extends Component {
     }
 }
 
-export default connect(null, { postContact })(Contact);
+export default connect(null, { postContact })(ContactPage);

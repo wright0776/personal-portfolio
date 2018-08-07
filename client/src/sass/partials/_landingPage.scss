@@ -42,12 +42,12 @@
     height: 100%;
     width: 100%;
 }
-.title {
+.cardTitle {
     margin-top: 10px;
     font-size: 3em;
     line-height: 1.7;
 }
-.subtitle {
+.cardSubtitle {
     margin-bottom: 10px;
 }
 .card-back {
@@ -68,7 +68,7 @@
         width: 500px;
         height: 200px;
     }
-    .title {
+    .cardTitle {
     margin: 20px 0 10px 0;
     font-size: 5em;
     line-height: 1.4;
@@ -86,7 +86,7 @@
 }
 
 @media (min-width: 600px) {
-    .subtitle {
+    .cardSubtitle {
         font-size: 1.2em;
     }
 }

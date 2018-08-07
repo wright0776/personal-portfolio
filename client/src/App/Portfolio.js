@@ -1,10 +1,6 @@
 import React, { Component } from 'react'
-import './portfolio.css'
 
 class Portfolio extends Component {
-    constructor(props) {
-        super(props)
-    }
 
     render() {
         return (

@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import './main.css';
 
-class Main extends Component {
+class LandingPage extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -39,8 +38,8 @@ class Main extends Component {
                     style={{ transform: `rotateY(${this.state.spinY}) rotateX(${this.state.spinX})`, animation: this.state.animation }}
                 >
                     <div className='card-front'>
-                        <h1 className='title'>Matt Wright</h1>
-                        <p className='subtitle'>Certified Full Stack Web Developer</p>
+                        <h1 className='cardTitle'>Matt Wright</h1>
+                        <p className='cardSubtitle'>Certified Full Stack Web Developer</p>
                     </div>
                     <div className='card-back'>
                         <span className='card-info1'>Matthew Wright</span>
@@ -69,4 +68,4 @@ class Main extends Component {
 }
 
 
-export default Main;
+export default LandingPage;

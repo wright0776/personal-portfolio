@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    font-family: "Roboto";
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+}
+
+.imp {
+    font-weight: 400;
+}
+
+button {
+    cursor: pointer;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,400,900|Syncopate");
+@import 'partials/resume';
+@import 'partials/contactPage';
+@import 'partials/betterAnswers';
+@import 'partials/adminViewContacts';
+@import 'partials/landingPage';
+@import 'partials/hamburgers';
+@import 'partials/mobileNav';
+@import 'partials/portfolio';
+@import 'partials/topNav';
+
+

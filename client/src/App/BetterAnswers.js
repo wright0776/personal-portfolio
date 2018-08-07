@@ -1,5 +1,4 @@
 import React from 'react';
-import './better-answers.css';
 
 function BetterAnswers() {
     return (
