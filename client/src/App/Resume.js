@@ -82,30 +82,6 @@ function Resume() {
                         </li>
                     </ul>
                 </div>
-                
-                <div className='references'>
-                    <h2>REFERENCES</h2>
-                    <ul className='referencesList'>
-                        <li className='ref'>
-                            <h4>Jeremiah Matthews</h4>
-                            <span>Software Engineer and Technical Team Lead</span>
-                            <span>Assure Services</span>
-                            <span className='refPhone'>+1 808.748.9082</span>
-                        </li>
-                        <li className='ref'>
-                            <h4>Mark Nielsen</h4>
-                            <span>Software Engineer and Technical Team Lead</span>
-                            <span>Assure Services</span>
-                            <span className='refPhone'>+1 801.867.0109</span>
-                        </li>
-                        <li className='ref'>
-                            <h4>Ken Diederich</h4>
-                            <span>Business Information Systems Professional and Software Developer</span>
-                            <span>Snap Finance</span>
-                            <span className='phone'>+1 801.712.9728</span>
-                        </li>
-                    </ul>
-                </div>
             </div>
             {/* <a href={require("../docs/Matthew-Wright-Resume.pdf")} download="Matthew-Wright-Resume">
                 download
