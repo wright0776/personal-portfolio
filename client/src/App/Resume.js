@@ -1,33 +1,60 @@
-import React from 'react'
+import React from 'react';
 
 function Resume() {
     return (
         <div className='resume'>
+
             <h1 className='title' >Matthew Wright</h1>
+
             <div className='contact'>
                 <h5>801-755-0125</h5>
                 <h5>matwright2010@gmail.com</h5>
                 <h5>matthewwright.io</h5>
             </div>
+
             <div className='resumeContent'>
                 <div className='skills'>
                     <h2>SKILLS</h2>
                     <ul className='skillsContainer'>
-                        <li>React</li>
+                        <li>React / Angular 2+ / Vue</li>
                         <li>Node.js</li>
                         <li>JavaScript</li>
                         <li>Git</li>
-                        <li>JSON</li>
+                        <li>Redux / NGRX / RxJs</li>
                         <li>HTML</li>
-                        <li>CSS</li>
+                        <li>CSS/Sass/Scss</li>
+                        <li>AWS CodePipeline</li>
+                        <li>AWS Lambda</li>
+                        <li>AWS S3</li>
                         <li>Express</li>
-                        <li>MongoDB</li>
+                        <li>NoSQL/SQL</li>
                         <li>Mongoose</li>
-                        <li>Sass/Scss</li>
-                        <li>Angular 4</li>
-                        <li>Java</li>
+                        <li>MongoDB</li>
+                        <li>AWS DynamoDB</li>
                     </ul>
                 </div>
+
+                <div className='experience'>
+                    <h2>EXPERIENCE</h2>
+                    <ul className='expList'>
+                        <li>
+                            <h3>Software Engineer, Assure</h3>
+                            <span>Salt Lake City, UT — Sep 2018 - Present</span>
+                            <p>Worked with MEAN stack, front and back end. Engaged with several API’s including eSignLive, WebMerge, LegalInc and BlockScore. Used AWS services including CodePipeline, S3, Lambda and DynamoDB. Learned a great deal about finance, business, and tax. Mentored interns fresh out of coding school. </p>
+                        </li>
+                        <li>
+                            <h3>Lead Central Sterile Processing Tech, Salt Lake Regional Medical Center</h3>
+                            <span>Salt Lake City, UT — Aug 2014 - Sept 2015, Feb 2017 - Dec 2017</span>
+                            <p>Gained experience leading a team and learned how handle and meet deadlines and expectations.</p>
+                        </li>
+                        <li>
+                            <h3>Surgical Support Tech, Salt Lake Regional Medical Center</h3>
+                            <span>Salt Lake City, Utah — Oct 2012 - Dec 2013, Sept 2015 - Feb 2017</span>
+                            <p>Learned to work in a fast paced environment and be part of a team. Sharpened skills in supporting people and learned to be accountable for my own work. </p>
+                        </li>
+                    </ul>
+                </div>
+
                 <div className='education'>
                     <h2>EDUCATION</h2>
                     <ul className='eduContainer'>
@@ -41,26 +68,7 @@ function Resume() {
                         </li>
                     </ul>
                 </div>
-                <div className='experience'>
-                    <h2>EXPERIENCE</h2>
-                    <ul className='expList'>
-                        <li>
-                            <h3>Lead Central Sterile Processing Tech, Salt Lake Regional Medical Center</h3>
-                            <span>Salt Lake City, UT — Aug 2014 - Sept 2015, Feb 2017 - Dec 2017</span>
-                            <p>Gained experience leading a team and learned how handle and meet deadlines and expectations.</p>
-                        </li>
-                        <li>
-                            <h3>Surgical Support Tech, Salt Lake Regional Medical Center</h3>
-                            <span>Salt Lake City, Utah — Oct 2012 - Dec 2013, Sept 2015 - Feb 2017</span>
-                            <p>Learned to work in a fast paced environment and be part of a team. Sharpened skills in supporting people and learned to be accountable for my own work. </p>
-                        </li>
-                        <li>
-                            <h3>Student, Nuclear Field “A” School, Naval Nuclear Power Training Command, United States Navy</h3>
-                            <span>Goose Creek, South Carolina, Jan 2014 - Aug 2014 (Honorable Discharge)</span>
-                            <p>Learned to take orders, work as a member of a team, follow rules, and handle tough situations. Gained appreciation for civilian life as an American.</p>
-                        </li>
-                    </ul>
-                </div>
+
                 <div className='resPortfolio'>
                     <h2>PORTFOLIO</h2>
                     <ul className='portfolioList'>
@@ -74,26 +82,27 @@ function Resume() {
                         </li>
                     </ul>
                 </div>
+                
                 <div className='references'>
                     <h2>REFERENCES</h2>
                     <ul className='referencesList'>
                         <li className='ref'>
-                            <h4>Kayleen Evans</h4>
-                            <span>Director of Surgical Services</span>
-                            <span>Salt Lake Regional Medical Center</span>
-                            <span className='refPhone'>801-350-4111</span>
-                        </li>
-                        <li className='ref'>
-                            <h4>Danielle Walker</h4>
-                            <span>Full-stack Developer</span>
+                            <h4>Jeremiah Matthews</h4>
+                            <span>Software Engineer and Technical Team Lead</span>
                             <span>Assure Services</span>
-                            <span className='refPhone'>408-390-3313</span>
+                            <span className='refPhone'>+1 808.748.9082</span>
                         </li>
                         <li className='ref'>
-                            <h4>Austin Walker</h4>
-                            <span>Web Developer</span>
-                            <span>Crossroads Technologies Inc.</span>
-                            <span className='phone'>801-884-9531</span>
+                            <h4>Mark Nielsen</h4>
+                            <span>Software Engineer and Technical Team Lead</span>
+                            <span>Assure Services</span>
+                            <span className='refPhone'>+1 801.867.0109</span>
+                        </li>
+                        <li className='ref'>
+                            <h4>Ken Diederich</h4>
+                            <span>Business Information Systems Professional and Software Developer</span>
+                            <span>Snap Finance</span>
+                            <span className='phone'>+1 801.712.9728</span>
                         </li>
                     </ul>
                 </div>
@@ -105,4 +114,4 @@ function Resume() {
     )
 }
 
-export default Resume
+export default Resume;

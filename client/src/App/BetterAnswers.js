@@ -3,8 +3,8 @@ import React from 'react';
 function BetterAnswers() {
     return (
         <div className='betterAnswers'>
-            <h1>Dear Bret,</h1>
-            <p className='introStatement'>Had I not been so nervous, I may have given you these better answers to the questions you asked.</p>
+            <h1>Job Interview Questions and Answers</h1>
+            <p className='introStatement'></p>
             <body>
                 <div>
                     <h2>Q: Talk about scope in relation to JavaScript.</h2>

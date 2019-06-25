@@ -3,6 +3,8 @@ import ContactForm from './ContactForm';
 import { connect } from 'react-redux';
 import { postContact } from '../redux/contacts';
 import ThankyouMessage from './ThankyouMessage';
+import email from '../media/email.png';
+import telephone from '../media/telephone.png';
 
 class ContactPage extends Component {
     constructor(props) {
@@ -62,11 +64,11 @@ class ContactPage extends Component {
             <div className='contactPage'>
                 <h1 className='contactTitle'>Contact Me</h1>
                 <div className='contactPhone'>
-                    <img src="http://www.adornpixels.com/cdn/2/2000/499/black-telephone-icon_146226.png" alt="phone" />
+                    <img src={telephone} alt="phone" />
                     <span>801-755-0125</span>
                 </div>
                 <div className='contactEmail'>
-                    <img src="https://png.icons8.com/metro/1600/email.png" alt="email" />
+                    <img src={email} alt="email" />
                     <span>matwright2010@gmail.com</span>
                 </div>
                 <ContactForm
