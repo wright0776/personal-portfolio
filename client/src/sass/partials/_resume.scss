@@ -162,42 +162,4 @@
             margin: 10px 0;
         }
     }
-
-
-    /* RESUME REFERENCES SECTION */
-
-    .references {
-        display: flex;
-        flex-direction: column;
-        align-items: center;    
-    }
-
-    .referencesList {
-        list-style: none;
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        margin: 0 0 10px 0;
-        width: 80%;
-
-        li {
-            display: flex;
-            flex-direction: column;
-            margin: 0 0 10px 0;
-            line-height: 1.2;
-        }
-        h4, .phone {
-            font-weight: 300;
-        }
-    }
-
-    .refPhone {
-        font-weight: 300;
-    }
-    .ref {
-        width: 150px;
-        padding-left: 20px;
-        margin-top: 15px;
-    }
-
 }
