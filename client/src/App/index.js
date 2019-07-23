@@ -10,7 +10,7 @@ import MobileNav from './MobileNav';
 // ROUTES
 import Main from "./LandingPage";
 import Portfolio from './Portfolio';
-import Resume from './Resume';
+import Resume from './Resume.jsx';
 import ContactPage from './ContactPage';
 
 // ADMIN ROUTES

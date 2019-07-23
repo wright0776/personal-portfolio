@@ -16,173 +16,96 @@ button {
 }
 
 .resume {
+  background-image: url("../media/wood.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10px 0;
+}
+.resume .page {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 1%;
-  padding: 5px;
-  background: #f1f1f1;
-  box-shadow: 0 0 2px #888;
-  /* RESUME PORTFOLIO SECTION */
-  /* RESUME REFERENCES SECTION */
-}
-.resume .contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 0 10px 0;
-}
-@media (min-width: 600px) {
-  .resume .contact {
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-evenly;
-    margin: 10px 0 15px 0;
-  }
-}
-.resume .resumeContact > * {
-  margin: 1px 0 0 0;
-}
-.resume .resumeContent {
+  margin: 0 auto;
+  padding: 75px;
   background: #fff;
-  width: 99%;
-  padding: 3%;
+  box-shadow: 0 0 2px #888;
+  max-width: 1000px;
 }
-.resume .resumeContent > * {
-  margin: 0 0 10px 0;
+.resume .page p, .resume .page li {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0.9em 0;
 }
-.resume .resumeContent h2 {
-  margin: 5px 0;
+.resume .page b {
+  font-weight: bold;
 }
-.resume .skills,
-.resume .education,
-.resume .experience,
-.resume .resPortfolio {
+.resume .page .title-underlined {
+  font-size: 14px;
+  font-weight: 600;
+  width: 100%;
+  padding: 5px;
+  border-bottom: 2px solid black;
+}
+.resume .page .title {
+  font-size: 14px;
+  font-weight: 600;
+  width: 100%;
+  padding: 6px 0;
+}
+.resume .page .title2 {
+  font-size: 14px;
+  font-weight: 600;
+  width: 100%;
+  padding-top: 30px;
+}
+.resume .page ul {
+  padding-left: 50px;
+}
+.resume .page .header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 100%;
 }
-.resume .skillsContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.9em;
-  width: 80%;
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
+.resume .page .header .left {
+  width: 50%;
 }
-.resume .skillsContainer > * {
-  margin: 0 0 1px 0;
-  font-weight: 300;
+.resume .page .header .left h1 {
+  margin: 0.67em 0;
+  font-weight: 400;
 }
-.resume .eduContainer {
-  list-style: none;
-  font-size: 0.9em;
-  width: 95%;
+.resume .page .header .right {
+  width: 50%;
 }
-.resume .eduContainer > * {
-  margin: 0 0 10px 0;
-}
-.resume .eduTitle {
-  font-weight: 300;
-  font-size: 1em;
-}
-.resume .eduSub {
-  padding: 0 0 0 20px;
-  display: flex;
-}
-.resume .expList {
-  list-style: none;
-  font-size: 0.9em;
-}
-.resume .expList li {
-  margin: 10px 0 20px 0;
-}
-.resume .expList li h3 {
-  padding-bottom: 2px;
-}
-.resume .expList li span {
-  font-style: italic;
-}
-.resume .expList li p {
-  margin: 10px 0;
-}
-.resume .expList h3, .resume .expList h4 {
-  font-weight: 300;
-  font-size: 1em;
-  margin: 5px 0 0 0;
-}
-.resume .expList span, .resume .expList p {
-  display: flex;
-  padding: 0 0 0 20px;
-  margin: 0 0 1px 0;
-}
-.resume .portfolioList {
-  list-style: none;
-}
-.resume .portfolioList li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-@media (min-width: 600px) {
-  .resume .portfolioList {
+@media (max-width: 650px) {
+  .resume .page .header .left, .resume .page .header .right {
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
   }
 }
-.resume .portfolioList a {
-  color: #000;
-  text-decoration: none;
+@media (max-width: 650px) {
+  .resume .page .header {
+    flex-direction: column;
+  }
 }
-.resume .portfolioList img {
-  height: 20px;
-  margin: 0 10px 0 0;
+.resume .page .summary,
+.resume .page .experience,
+.resume .page .achievements,
+.resume .page .education {
+  padding: 24px 5px;
+  width: 100%;
 }
-.resume .portfolioList .mLogo {
-  margin: 0 10px -5px 0;
-  font-size: 20px;
-  font-family: "Syncopate", sans-serif;
+.resume .page .gb-paragraph {
+  line-height: 125%;
 }
-.resume .portfolioList .website {
-  margin: 10px 0;
-}
-.resume .portfolioList .resPort {
-  margin: 10px 0;
-}
-.resume .references {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.resume .referencesList {
-  list-style: none;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  margin: 0 0 10px 0;
-  width: 80%;
-}
-.resume .referencesList li {
-  display: flex;
-  flex-direction: column;
-  margin: 0 0 10px 0;
-  line-height: 1.2;
-}
-.resume .referencesList h4, .resume .referencesList .phone {
-  font-weight: 300;
-}
-.resume .refPhone {
-  font-weight: 300;
-}
-.resume .ref {
-  width: 150px;
-  padding-left: 20px;
-  margin-top: 15px;
+@media (max-width: 650px) {
+  .resume .page {
+    padding: 75px 20px;
+  }
 }
 
+@media (max-width: 1028px) {
+  .resume {
+    padding: 10px;
+  }
+}
 /* CONTACT PAGE */
 .contactPage {
   height: 90vh;

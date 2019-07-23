@@ -1,165 +1,112 @@
 // RESUME PAGE 
 
 .resume {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1%;
-    padding: 5px;
-    background: #f1f1f1;
-    box-shadow: 0 0 2px #888;
+    // background: url('../media/wood.jpeg');
+    // background: green;
+    // background-image: url('../media/my_face2.jpg');
+    background-image: url('../media/wood.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px 0;
 
-    .contact {
+    .page {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 0 0 10px 0;
-    }
-    @media (min-width: 600px) {
-        .contact {
-            flex-direction: row;
-            width: 100%;
-            justify-content: space-evenly;
-            margin: 10px 0 15px 0;
-        }
-    }
-
-    .resumeContact>* {
-        margin: 1px 0 0 0;
-    }
-
-    .resumeContent {
+        margin: 0 auto;
+        padding: 75px;
         background: #fff;
-        width: 99%;
-        padding: 3%;
-    }
-
-    .resumeContent>* {
-        margin: 0 0 10px 0;
-    }
-
-    .resumeContent h2 {
-        margin: 5px 0;
-    }
-
-    .skills,
-    .education,
-    .experience,
-    .resPortfolio {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    // RESUME SKILLS SECTION
-
-    .skillsContainer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: .9em;
-        width: 80%;
-        display: grid;
-        grid-template-columns: 33% 33% 33%;
-    }
-
-    .skillsContainer>* {
-        margin: 0 0 1px 0;
-        font-weight: 300;
-    }
-
-    // RESUME EDUCATION SECTION
-
-    .eduContainer {
-        list-style: none;
-        font-size: .9em;
-        width: 95%;
-    }
-
-    .eduContainer>* {
-        margin: 0 0 10px 0;
-    }
-
-    .eduTitle {
-        font-weight: 300;
-        font-size: 1em;
-    }
-
-    .eduSub {
-        padding: 0 0 0 20px;
-        display: flex;
-    }
-
-    // RESUME EXPERIENCE SECTION
-
-    .expList {
-        list-style: none;
-        font-size: .9em;
-
-        li {
-            margin: 10px 0 20px 0;
-
-            h3 {
-                padding-bottom: 2px;
-            }
-            span {
-                font-style: italic;
-            }
-            p {
-                margin: 10px 0;
-            }
+        box-shadow: 0 0 2px #888;
+        max-width: 1000px;
+    
+        p, li {
+            font-size: 14px;
+            font-weight: 400;
+            margin: .9em 0;
         }
-        h3, h4 {
-            font-weight: 300;
-            font-size: 1em;
-            margin: 5px 0 0 0;
+
+        b {
+            font-weight: bold;
+        }
+
+        .title-underlined {
+            font-size: 14px;
+            font-weight: 600;
+            width: 100%;
+            padding: 5px;
+            border-bottom: 2px solid black;
         }
     
-        span, p {
+        .title {
+            font-size: 14px;
+            font-weight: 600;
+            width: 100%;
+            padding: 6px 0;
+        }
+
+        .title2 {
+            font-size: 14px;
+            font-weight: 600;
+            width: 100%;
+            padding-top: 30px;
+        }
+
+        ul {
+            padding-left: 50px;
+        }
+    
+        .header {
             display: flex;
-            padding: 0 0 0 20px;
-            margin: 0 0 1px 0;
+            width: 100%;
+    
+            .left {
+                width: 50%;
+    
+                h1 {
+                    margin: 0.67em 0;
+                    font-weight: 400;
+                }
+            }
+    
+            .right {
+                width: 50%;
+            }
+
+            @media (max-width: 650px) {
+                .left, .right {
+                    width: 100%;
+                }
+            }
+        }
+
+        @media (max-width: 650px) {
+            .header {
+                flex-direction: column;
+            }
+        }
+
+        .summary,
+        .experience,
+        .achievements,
+        .education {
+            padding: 24px 5px;
+            width: 100%;
+        }
+
+        .gb-paragraph {
+            line-height: 125%;
         }
     }
 
+    @media (max-width: 650px) {
+        .page {
+            padding: 75px 20px;
+        }
+    }
+}
 
-    /* RESUME PORTFOLIO SECTION */
-
-    .portfolioList {
-        list-style: none;
-
-        li {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        @media (min-width: 600px) {
-            & {
-                width: 100%;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
-            }
-            
-        }
-        a {
-            color: #000;
-            text-decoration: none;
-        }
-        img {
-            height: 20px;
-            margin: 0 10px 0 0;
-        }
-        .mLogo {
-            margin: 0 10px -5px 0;
-            font-size: 20px;
-            font-family: 'Syncopate', sans-serif;
-        }
-        .website {
-            margin: 10px 0;
-        }
-        .resPort {
-            margin: 10px 0;
-        }
+@media (max-width: 1028px) {
+    .resume {
+        padding: 10px;
     }
 }
