@@ -1,11 +1,11 @@
 import React from 'react';
-import mwresume from '../media/mwresume.pdf';
+import mattwrightresume from '../media/mattwrightresume.pdf';
 
 function Resume() {
     return (
         <div className='resume'>
 
-            <a className='download' href={mwresume} target='_blank'>Download</a>
+            <a className='download' href={mattwrightresume} target='_blank'>Download</a>
             
             <div className='page'>
 
@@ -36,7 +36,7 @@ function Resume() {
 
                 <h2 className='title-underlined'>Work Experience</h2>
                 <div className='experience'>
-                    <h2 className='title'>Software Engineer - Assure - Salt Lake City, Utah - September 2018 - June 2018</h2>
+                    <h2 className='title'>Software Engineer - Assure - Salt Lake City, Utah - September 2018 - June 2019</h2>
                     <h2 className='title2'>Glassboard</h2>
                     <p className='gb-paragraph'>
                         This web application is designed to automate the organization of SPVs (Special Purpose Vehicles) as well as other private equity
