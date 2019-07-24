@@ -1,8 +1,11 @@
 import React from 'react';
+import mwresume from '../media/mwresume.pdf';
 
 function Resume() {
     return (
         <div className='resume'>
+
+            <a className='download' href={mwresume} target='_blank'>Download</a>
             
             <div className='page'>
 
