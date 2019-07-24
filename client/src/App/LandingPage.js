@@ -39,7 +39,7 @@ class LandingPage extends Component {
                 >
                     <div className='card-front'>
                         <h1 className='cardTitle'>Matt Wright</h1>
-                        <p className='cardSubtitle'>Certified Full Stack Web Developer</p>
+                        <p className='cardSubtitle'>Full Stack Web Developer</p>
                     </div>
                     <div className='card-back'>
                         <span className='card-info1'>Matthew Wright</span>

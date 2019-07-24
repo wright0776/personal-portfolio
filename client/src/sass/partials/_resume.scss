@@ -28,6 +28,10 @@
         background-repeat: no-repeat;
     }
 
+    .download:hover {
+        text-decoration: underline;
+    }
+
     .page {
         display: flex;
         flex-direction: column;

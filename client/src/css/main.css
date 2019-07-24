@@ -41,6 +41,9 @@ button {
   background-size: contain;
   background-repeat: no-repeat;
 }
+.resume .download:hover {
+  text-decoration: underline;
+}
 .resume .page {
   display: flex;
   flex-direction: column;
