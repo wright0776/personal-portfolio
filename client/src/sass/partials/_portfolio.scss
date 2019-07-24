@@ -2,12 +2,15 @@
 
 .portfolio {
     padding: 0 5%;
-    background: linear-gradient(200deg, rgba(0, 255, 0, 0.25), rgba(0, 174, 255, 0.75), rgb(162, 0, 255));
+    // background: linear-gradient(200deg, rgba(0, 255, 0, 0.25), rgba(0, 174, 255, 0.75), rgb(162, 0, 255));
     /* background-image: url('https://images.unsplash.com/photo-1532452197655-0bca72ee54da?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cf870d5303d8d3389a21f4076a682bd8&auto=format&fit=crop&w=2639&q=80');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; */
     min-height: 100vh;
+    background-image: url('../media/wood.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .portfolio-items>* {
     font-weight: 300;
@@ -36,7 +39,7 @@
     line-height: 2.5;
     text-align: center;
     font-size: 300%;
-    color: rgb(162, 0, 255);
+    // color: rgb(162, 0, 255);
 }
 .slide {
     /* animation: slideInLeft 1.2s; */
@@ -75,7 +78,7 @@
     transition: .5s;
     box-shadow: inset -10px 20px 20px -15px whitesmoke, -10px 20px 30px -5px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.1);    
+    background-color: rgba(255, 255, 255, 0.5);    
 }
 
 .item:before {

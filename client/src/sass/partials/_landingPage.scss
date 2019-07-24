@@ -11,6 +11,10 @@
     text-align: center;
     perspective: 1000px;
     perspective-origin: top;
+    background-image: url('../media/wood.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
 }
 .card-container {
     margin-top: 40px;
