@@ -11,11 +11,15 @@ import "./css/main.css";
 
 atatus.config('19b3072c306e4d8398a801b7d2085ca8').install();
 
+let data = {
+    fn: 'testFn',
+    user: 'Matt',
+    date: new Date()
+}
+
 atatus.recordTransaction('recorded transaction', 60);
-atatus.recordTransaction('recorded transaction', 60);
-atatus.recordTransaction('one', 1);
-atatus.recordTransaction('zero', 0);
-atatus.recordTransaction('no time');
+atatus.recordTransaction(JSON.stringify(data), 60);
+
 console.log('done!');
 
 ReactDOM.render(
