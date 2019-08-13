@@ -10,28 +10,12 @@ import App from "./App";
 import "./css/main.css";
 
 atatus.config('19b3072c306e4d8398a801b7d2085ca8').install();
-atatus.beginTransaction('testFunction');
-setTimeout(() => {
-    console.log('set timeout ran');
-    atatus.endTransaction('testFunction');
-}, 1000);
-
-atatus.beginTransaction('oneMilisec');
-setTimeout(() => {
-    console.log('one milisec ran');
-    atatus.endTransaction('oneMilisec');
-}, 1);
-
-atatus.beginTransaction('noTime');
-atatus.endTransaction('noTime');
-
-atatus.endTransaction('endOnly');
-
-atatus.leaveBreadcrumb('hello', 'hello message');
 
 atatus.recordTransaction('recorded transaction', 60);
-
-console.log('end of atatus')
+atatus.recordTransaction('recorded transaction', 60);
+atatus.recordTransaction('zero', 0);
+atatus.recordTransaction('no time');
+console.log('done!');
 
 ReactDOM.render(
     <Provider store={store}>
