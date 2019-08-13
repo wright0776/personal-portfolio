@@ -27,9 +27,11 @@ atatus.endTransaction('noTime');
 
 atatus.endTransaction('endOnly');
 
-atatus.beginTransaction('beginOnly');
+atatus.leaveBreadcrumb('hello', 'hello message');
 
-console.log('end of custom transactions')
+atatus.recordTransaction('recorded transaction', 60);
+
+console.log('end of atatus')
 
 ReactDOM.render(
     <Provider store={store}>
