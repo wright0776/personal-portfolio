@@ -13,6 +13,7 @@ atatus.config('19b3072c306e4d8398a801b7d2085ca8').install();
 
 atatus.recordTransaction('recorded transaction', 60);
 atatus.recordTransaction('recorded transaction', 60);
+atatus.recordTransaction('one', 1);
 atatus.recordTransaction('zero', 0);
 atatus.recordTransaction('no time');
 console.log('done!');
