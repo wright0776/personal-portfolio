@@ -11,7 +11,10 @@ import "./css/main.css";
 
 atatus.config('19b3072c306e4d8398a801b7d2085ca8').install();
 atatus.beginTransaction('testFunction');
-atatus.endTransaction('testFunction');
+setTimeout(() => {
+    console.log('set timeout ran');
+    atatus.endTransaction('testFunction');
+}, 1000);
 
 ReactDOM.render(
     <Provider store={store}>
