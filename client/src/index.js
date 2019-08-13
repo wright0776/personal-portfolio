@@ -10,7 +10,8 @@ import App from "./App";
 import "./css/main.css";
 
 atatus.config('19b3072c306e4d8398a801b7d2085ca8').install();
-atatus.notify({user: 'matt', date: new Date(), fn: 'testFn'});
+atatus.beginTransaction('testFunction');
+atatus.endTransaction('testFunction');
 
 ReactDOM.render(
     <Provider store={store}>
