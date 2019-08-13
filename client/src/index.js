@@ -16,12 +16,20 @@ setTimeout(() => {
     atatus.endTransaction('testFunction');
 }, 1000);
 
-atatus.beginTransaction('zeroTime');
-atatus.endTransaction('zeroTime');
+atatus.beginTransaction('oneMilisec');
+setTimeout(() => {
+    console.log('one milisec ran');
+    atatus.endTransaction('oneMilisec');
+}, 1);
+
+atatus.beginTransaction('noTime');
+atatus.endTransaction('noTime');
 
 atatus.endTransaction('endOnly');
 
 atatus.beginTransaction('beginOnly');
+
+console.log('end of custom transactions')
 
 ReactDOM.render(
     <Provider store={store}>
