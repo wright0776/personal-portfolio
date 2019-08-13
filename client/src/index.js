@@ -16,6 +16,13 @@ setTimeout(() => {
     atatus.endTransaction('testFunction');
 }, 1000);
 
+atatus.beginTransaction('zeroTime');
+atatus.endTransaction('zeroTime');
+
+atatus.endTransaction('endOnly');
+
+atatus.beginTransaction('beginOnly');
+
 ReactDOM.render(
     <Provider store={store}>
         <BrowserRouter>
