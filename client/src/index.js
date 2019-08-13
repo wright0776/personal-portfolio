@@ -1,3 +1,8 @@
+import * as atatus from 'atatus-js';
+atatus.config('19b3072c306e4d8398a801b7d2085ca8').install();
+
+atatus.notify(new Error('Test Atatus Setup'));
+
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from 'react-router-dom';
