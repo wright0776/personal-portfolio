@@ -6,7 +6,7 @@ function TopNav() {
         <div className="topNav">
             <ul className="navButtons">
                 <Link className='navButton' to="/">
-                    Matt
+                    Home
                     <div className='underline'></div>
                 </Link>
                 <Link className='navButton' to="/portfolio">

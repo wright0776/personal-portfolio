@@ -68,9 +68,7 @@ function BetterAnswers() {
                 </div>
                 <hr />
                 <div className='conclusion'>
-                    <p>In conclusion, thank you again for the valuable interview experience and considering me as an applicant. Have a great day!</p>
-                    <span className='signOff'>- Matt Wright</span>
-                    {/* <img className='myFace' src="../../media/my_face.jpg" alt="picture of Matt Wright"/> */}
+                    <span className='signOff'>Matt Wright</span>
                     <div className='myFace'></div>
                 </div>
             </body>

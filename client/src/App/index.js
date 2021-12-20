@@ -15,7 +15,7 @@ import ContactPage from './ContactPage';
 
 // ADMIN ROUTES
 import AdminViewContacts from './AdminViewContacts';
-import BetterAnswers from './BetterAnswers';
+import InterviewQuestions from './InterviewQuestions';
 
 function App() {
     return (
@@ -28,7 +28,7 @@ function App() {
                 <Route path='/resume' component={Resume} />
                 <Route path='/contact' component={ContactPage} />
                 <Route path='/adminViewContacts' component={AdminViewContacts} />
-                <Route path='/dear-bret' component={BetterAnswers} />
+                <Route path='/interviewQuestions' component={InterviewQuestions} />
             </Switch>
         </div>
     )
